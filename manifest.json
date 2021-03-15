@@ -1,0 +1,37 @@
+{
+    "name": "Current Timer",
+    "version": "1.0",
+    "description": "entry level extension",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "pg16.png",
+            "48": "pg48.png",
+            "128": "pg128.png"
+        },
+        "default_title": "PG Current Timer"
+    },
+    "icons": {
+        "16": "pg16.png",
+        "48": "pg48.png",
+        "128": "pg128.png"
+    },
+    "commands": {
+        "_execute_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+F",
+                "mac": "MacCtrl+Shift+F"
+            },
+            "description": "Opens popup.html"
+        }
+    },
+    "options_page": "options.html",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "storage",
+        "notifications"
+    ]
+}
